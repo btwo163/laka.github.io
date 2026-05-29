@@ -12,3 +12,7 @@ desktop.ini
 *.swp
 *.swo
 *~
+
+# Original font files (too large for repo, use compressed versions in assets/fonts/)
+*.ttf
+*.otf
