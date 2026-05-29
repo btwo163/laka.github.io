@@ -48,6 +48,9 @@
 <!-- Font preload (start downloading early) -->
 <link rel="preload" href="assets/fonts/canger-huaxinti.woff2" as="font" type="font/woff2" crossorigin>
 
+<!-- Hero image preload -->
+<link rel="preload" href="assets/images/hero-illustration.webp" as="image" type="image/webp">
+
 <!-- Stylesheet -->
 <link rel="stylesheet" href="style.css">
 </head>
@@ -86,19 +89,27 @@
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-inner">
-    <div class="hero-badge">
-      <span class="hero-badge-dot" aria-hidden="true"></span>
-      独立产品人
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        独立产品人
+      </div>
+      <h1 class="hero-title">
+        创造有用的<br>数字产品，<em>安静地</em>。
+      </h1>
+      <p class="hero-sub">
+        热衷于把想法变成可用的工具。专注独立开发、内容创作和产品实验。相信小而美的力量。
+      </p>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-secondary">联系我</a>
+      </div>
     </div>
-    <h1 class="hero-title">
-      创造有用的<br>数字产品，<em>安静地</em>。
-    </h1>
-    <p class="hero-sub">
-      热衷于把想法变成可用的工具。专注独立开发、内容创作和产品实验。相信小而美的力量。
-    </p>
-    <div class="hero-actions">
-      <a href="#works" class="btn btn-primary">查看作品</a>
-      <a href="#contact" class="btn btn-secondary">联系我</a>
+    <div class="hero-illustration">
+      <picture>
+        <source srcset="assets/images/hero-illustration.webp" type="image/webp">
+        <img src="assets/images/hero-illustration.png" alt="数字产品插画" width="480" height="599" loading="eager">
+      </picture>
     </div>
   </div>
 </section>

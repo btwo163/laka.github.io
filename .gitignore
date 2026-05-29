@@ -16,3 +16,6 @@ desktop.ini
 # Original font files (too large for repo, use compressed versions in assets/fonts/)
 *.ttf
 *.otf
+
+# Original large images (resized versions in assets/images/)
+ChatGPT.png

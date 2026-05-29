@@ -16,14 +16,14 @@
    TOKENS — warm palette
    ============================================================ */
 :root {
-  --bg:        #f5f4ed;
-  --surface:   #faf9f5;
+  --bg:        #f4f1eb;     /* match hero illustration bg */
+  --surface:   #faf7f1;
   --surface2:  #ffffff;
   --fg:        #141413;
   --muted:     #5e5d59;
   --muted2:    #87867f;
-  --border:    #f0eee6;
-  --border2:   #e8e6dc;
+  --border:    #eae6de;
+  --border2:   #e2dfd6;
   --accent:    #c96442;
   --accent2:   #d97757;
   --dark:      var(--fg);       /* dark section bg = same as fg text */
@@ -271,8 +271,9 @@ nav {
   max-width: 1080px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto;
   gap: clamp(32px, 6vw, 64px);
+  align-items: center;
 }
 
 .hero-badge {
@@ -322,6 +323,17 @@ nav {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 8px;
+}
+
+.hero-illustration {
+  width: clamp(200px, 28vw, 360px);
+  flex-shrink: 0;
+}
+
+.hero-illustration img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-2xl);
 }
 
 /* ============================================================
@@ -667,6 +679,8 @@ footer {
   .content-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { grid-template-columns: 1fr; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-illustration { width: clamp(160px, 40vw, 280px); justify-self: center; }
 }
 
 /* ============================================================
